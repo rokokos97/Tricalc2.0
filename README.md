@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Tricalc 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It's second version of app for triathlets
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18.3.1
+- TypeScript
+- Vite
+- ESLint & Prettier for code formatting
+- Modern development tools and configurations
 
-## Expanding the ESLint configuration
+## Dependencies
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Main Dependencies
+- React: ^18.3.1
+- React DOM: ^18.3.1
 
-- Configure the top-level `parserOptions` property like this:
+### Development Dependencies
+- TypeScript: ~5.6.2
+- Vite: ^4.3.4
+- ESLint: ^9.19.0
+- Prettier: ^3.4.2
+- Various TypeScript and React related plugins
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+
+1. Clone the repository:
+```bash
+git clone git@github.com:rokokos97/Tricalc2.0.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Navigate to the project directory:
+```bash
+cd Tricalc2.0
 ```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+## Project Structure
+
+| Path | Description |
+|------|-------------|
+| `/src` | Main application source code |
+| `/src/App.tsx` | Main application component |
+| `/src/main.tsx` | Application entry point |
+| `/src/assets` | Static assets and resources |
+| `/public` | Public static files |
+| `/src/App.css` | Main application styles |
+| `/src/index.css` | Global styles |
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run preview` - Preview production build
