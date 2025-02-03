@@ -1,0 +1,73 @@
+/* Mobile-first base styles */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Layout containers */
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Form elements */
+.input-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1024px;
+  }
+}
